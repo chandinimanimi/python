@@ -48,12 +48,12 @@ Selector['values'] = [l for l in all_no.keys()]
 Selector.current(7)
 Selector.place(x="240px", y="72px")
 
-generate_btn = Button(root, text="Generate Password", bg="orange", fg="black", font=("ubuntu", 15), cursor="hand2", command=password_generate)
+generate_btn = Button(root, text="Generate Password", bg="skyblue", fg="black", font=("ubuntu", 15), cursor="hand2", command=password_generate)
 generate_btn.bind("<Enter>", on_enter)
 generate_btn.bind("<Leave>", on_leave)
 generate_btn.pack(anchor="center", pady="50px")
 
-result_lable = Label(root, text="Generated Password Here :- ", bg="beige", fg="darkgreen", font=("ubuntu", 12))
+result_lable = Label(root, text="Generated Password Here :- ", bg="beige", fg="red", font=("ubuntu", 12))
 result_lable.place(x="20px", y="160px")
 
 password = StringVar()
